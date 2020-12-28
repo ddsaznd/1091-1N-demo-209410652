@@ -1,0 +1,35 @@
+$primary-color: #17a2b8;
+$dark-color: #343a40;
+$light-color: white;
+$danger-color: #dc3545;
+$success-color: #28a745;
+$dark-dark-color: rgb(151, 150, 150);
+$max-width: 1100px;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+//Set outline color
+@mixin set-outline-color($color) {
+  color: $color;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid $color;
+}
+
+@mixin set-outline-hover($color) {
+  color: white;
+  border-color: $color;
+  background: lighten($color, 5%);
+}

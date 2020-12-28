@@ -15,8 +15,24 @@ body {
   margin: 20px auto;
 }
 
+#aaa {
+  display: flex;
+}
+
+#two {
+  width: 50%;
+  height: 100px;
+  background-color: rgb(241, 245, 245);
+}
+
+aside {
+  width: 50%;
+  height: 400px;
+  background-color: darkturquoise;
+}
+
 #heading {
-  width: 100%;
+  width: 50%;
   height: 100px;
   background-color: darkcyan;
   text-align: center;
@@ -41,12 +57,6 @@ body {
 
 #main {
   display: flex;
-}
-
-aside {
-  width: 20%;
-  height: 400px;
-  background-color: darkturquoise;
 }
 
 #section {

@@ -24,7 +24,7 @@ function change(index) {
             break;
         case 6:
             p.innerHTML = 
-            '<iframe width=100% height="100%" src="./w06-ms-clone/index.html" />';
+            '<iframe width=100% height="100%" src="./w08-ms-clone/index.html" />';
             break;                                
     }
     
